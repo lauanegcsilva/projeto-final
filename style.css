@@ -22,8 +22,7 @@
 body{
     background-color: var(--cor1);
     font-family: var(--fonte-padrao);
-    display: flex;
-    flex-direction: column;
+     flex-direction: column;
     min-height: 100vh;
     }
 
@@ -31,7 +30,7 @@ body{
 header{
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
     max-height: 200px;
-   
+   width: 100%;
     text-align: center;
     padding-top: 40px;
 }
@@ -148,6 +147,10 @@ main strong{
     font-weight: bold;
 }
 
+article {
+    min-height: calc(100vh - 42px - 335px);
+}
+
 aside{
     background-color: var(--cor1);
     padding: 10px;
@@ -169,6 +172,7 @@ aside > h3 {
 .container {
     position: relative;
     padding: 15px;
+    min-width: 250px;
     max-width: 640px;
     margin: 0 auto;
   }
@@ -241,6 +245,7 @@ footer{
     justify-content: center;
     box-sizing: border-box;
     flex-shrink: 0;
+    bottom: 0;
 }
 
 .footer__texto {
@@ -248,4 +253,5 @@ footer{
     font-weight: 400;
     display: flex;
     align-items: center;
+    text-align: center;
 }
